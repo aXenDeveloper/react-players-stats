@@ -31,6 +31,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 | [React](https://reactjs.org/)                 | Library for Single Page Application _(SPA)_ |
 | [Typescript](https://www.typescriptlang.org/) | Types in JavaScript                         |
 | [SASS](https://sass-lang.com/)                | Style SCSS                                  |
+| [uuid](https://www.npmjs.com/package/uuid)    | Unique ID                                   |
 | [Font Awesome](https://fontawesome.com/)      | Icons SVG                                   |
 
 ## 📷 Screenshots

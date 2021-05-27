@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import './styles/global.scss';
+import './globalStyle.scss';
 import HomeView from './views/HomeView';
 
 ReactDOM.render(
