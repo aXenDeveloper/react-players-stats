@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-4) 0;
+
+  &_label {
+    flex: 1;
+    margin-right: var(--sp-4);
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    > input[type='text'] {
+      display: block;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      line-height: 1.5;
+      border-radius: var(--border-radius);
+      font-size: 1.7rem;
+      font-family: inherit;
+      border: var(--border-input);
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+      &:focus {
+        border-color: rgba(var(--border-input-active), 0.5);
+        outline: none;
+        box-shadow: 0 0 0 0.35rem rgba(var(--border-input-active), 0.25);
+      }
+    }
+  }
+}

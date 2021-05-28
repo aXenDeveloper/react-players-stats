@@ -10,8 +10,19 @@
     --sp-8: 40px;
     --sp-9: 48px;
     --sp-10: 64px;
-    --width-container: 1000px;
+    --width-container: 700px;
     --background-body: #ecf2f4;
+    --border-radius: var(--sp-1);
+    --border-input: 1px solid #ced4da;
+    --border-input-active: 4, 89, 218;
+    --input-primary: #0459da;
+    --input-primary-text: #fff;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
 }
 
 html {
@@ -19,9 +30,10 @@ html {
 }
 
 body {
-    margin: 0;
+    font-family: 'Poppins', -apple-system, Segoe UI, sans-serif;
     font-size: 1.6rem;
     background-color: var(--background-body);
+    margin: 0;
 }
 
 .container {
@@ -29,3 +41,5 @@ body {
     padding: 0 1.5rem;
     margin: 0 auto;
 }
+
+@import './buttons';

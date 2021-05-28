@@ -1,6 +1,9 @@
 import { ChangeEvent, FC, FormEvent, useState } from 'react';
+import style from './Form.module.scss';
 import { v4 as uuidv4 } from 'uuid';
 import { FormType } from './FormTypes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Form: FC<FormType> = ({ playersList, setPlayersList }) => {
   const [inputValue, setInputValue] = useState('');
@@ -11,7 +14,6 @@ const Form: FC<FormType> = ({ playersList, setPlayersList }) => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Working!');
 
     setPlayersList([
       ...playersList,
@@ -21,15 +23,24 @@ const Form: FC<FormType> = ({ playersList, setPlayersList }) => {
         points: 0
       }
     ]);
+
+    setInputValue('');
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        <input type="text" onChange={handleInput} value={inputValue} />
+    <form onSubmit={handleSubmit} className={style.form}>
+      <label className={style.form_label}>
+        <input
+          type="text"
+          onChange={handleInput}
+          value={inputValue}
+          placeholder="Enter a player name"
+        />
       </label>
 
-      <button type="submit">Add</button>
+      <button type="submit" className="button button_primary" disabled={!inputValue ? true : false}>
+        <FontAwesomeIcon icon={faPlus} /> Add
+      </button>
     </form>
   );
 };
