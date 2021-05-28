@@ -1,0 +1,15 @@
+.footer {
+  margin-top: var(--sp-8);
+  padding: var(--sp-5) 0;
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--color-light);
+
+  span {
+    display: block;
+
+    a {
+      font-weight: 700;
+    }
+  }
+}

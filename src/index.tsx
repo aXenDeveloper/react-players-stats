@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Footer from './components/Footer/Footer';
 import reportWebVitals from './reportWebVitals';
 import './styles/global.scss';
 import HomeView from './views/HomeView';
@@ -7,6 +8,7 @@ import HomeView from './views/HomeView';
 ReactDOM.render(
   <React.StrictMode>
     <HomeView />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

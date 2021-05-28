@@ -1,6 +1,13 @@
 # (React) Players Stats
 
-The application shows a list of players with their points.
+The application shows a list of players with their score.
+
+Players have colors when:
+
+- score <= 100 - color **red**,
+- score > 100 - color **green**
+
+Score can have (0-150).
 
 ## 🧰 Install
 

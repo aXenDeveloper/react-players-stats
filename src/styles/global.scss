@@ -13,7 +13,10 @@
     --width-container: 700px;
     --background-body: #ecf2f4;
     --color-body: #000;
+    --color-link: #0459da;
+
     --color-light: #757575;
+
     --border-radius: var(--sp-1);
 
     --border-input: 1px solid #ced4da;
@@ -46,6 +49,11 @@ body {
     background-color: var(--background-body);
     color: var(--color-body);
     margin: 0;
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
 }
 
 .container {
