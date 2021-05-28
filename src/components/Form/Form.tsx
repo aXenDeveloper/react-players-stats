@@ -9,20 +9,19 @@ const Form: FC<FormType> = ({ playersList, setPlayersList }) => {
   const [inputValue, setInputValue] = useState('');
 
   const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
-    const current = e.target.value;
-    setInputValue(current);
+    setInputValue(e.target.value);
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     setPlayersList([
-      ...playersList,
       {
         id: uuidv4(),
         name: inputValue,
         score: 0
-      }
+      },
+      ...playersList
     ]);
 
     setInputValue('');

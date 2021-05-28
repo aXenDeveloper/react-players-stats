@@ -2,19 +2,11 @@
   padding: 0;
   margin: 0;
   list-style: none;
+}
 
-  &_item {
-    padding: var(--sp-4);
-    background-color: var(--box-color);
-    border-radius: var(--border-radius);
-
-    &:not(:last-child) {
-      margin-bottom: var(--sp-4);
-    }
-
-    &_content {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
+.empty {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--color-light);
+  font-style: italic;
 }

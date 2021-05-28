@@ -8,9 +8,12 @@ const HomeView = () => {
 
   return (
     <div className="container">
-      <Form playersList={playersList} setPlayersList={setPlayersList} />
+      <div className="title">
+        <h1>Players Stats</h1>
+      </div>
 
-      <PlayersList playersList={playersList} />
+      <Form playersList={playersList} setPlayersList={setPlayersList} />
+      <PlayersList playersList={playersList} setPlayersList={setPlayersList} />
     </div>
   );
 };

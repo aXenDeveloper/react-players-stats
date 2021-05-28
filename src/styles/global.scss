@@ -12,11 +12,18 @@
     --sp-10: 64px;
     --width-container: 700px;
     --background-body: #ecf2f4;
+    --color-body: #000;
+    --color-light: #757575;
     --border-radius: var(--sp-1);
+
     --border-input: 1px solid #ced4da;
     --border-input-active: 4, 89, 218;
+
     --input-primary: #0459da;
     --input-primary-text: #fff;
+    --input-light: #e8f2fa;
+    --input-light-text: #5187b3;
+
     --box-color: #fff;
 }
 
@@ -34,6 +41,7 @@ body {
     font-family: 'Poppins', -apple-system, Segoe UI, sans-serif;
     font-size: 1.6rem;
     background-color: var(--background-body);
+    color: var(--color-body);
     margin: 0;
 }
 
@@ -41,6 +49,10 @@ body {
     max-width: var(--width-container);
     padding: 0 1.5rem;
     margin: 0 auto;
+}
+
+.title {
+    text-align: center;
 }
 
 @import './buttons';
