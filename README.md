@@ -1,3 +1,5 @@
+![Header image](https://raw.githubusercontent.com/aXenDeveloper/react-players-stats/master/screenshots/1.png)
+
 # (React) Players Stats
 
 The application shows a list of players with their score.
@@ -42,3 +44,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 | [Font Awesome](https://fontawesome.com/)      | Icons SVG                                   |
 
 ## 📷 Screenshots
+
+![2](https://raw.githubusercontent.com/aXenDeveloper/react-players-stats/master/screenshots/2.png)
