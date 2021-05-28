@@ -7,8 +7,13 @@ import { PlayersListItemType } from './PlayersListItemTypes';
 const PlayersListItem: FC<PlayersListItemType> = ({ data, deletePlayer }) => {
   const { id, name, score } = data;
 
+  const scoreColorItem = (scoreItem: number) => {
+    if (scoreItem <= 100) return style.item_red;
+    return style.item_green;
+  };
+
   return (
-    <li className={style.item}>
+    <li className={`${style.item} ${scoreColorItem(score)}`}>
       <div className={style.item_content}>
         <span className={style.item_content_name}>{name}</span>
 
