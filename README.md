@@ -1,6 +1,6 @@
 ![Header image](https://raw.githubusercontent.com/aXenDeveloper/react-players-stats/master/screenshots/1.png)
 
-# (React) Players Stats
+# (React / NextJS) Players Stats
 
 The application shows a list of players with their score.
 
@@ -19,8 +19,12 @@ Use commands:
 git clone https://github.com/aXenDeveloper/react-players-stats
 
 npm i
+```
 
-npm start
+## 🛠 Run
+
+```bash
+npm run dev
 ```
 
 ## 🔨 Deployment
@@ -31,17 +35,26 @@ Command:
 npm run build
 ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💻 Server
+
+Commands:
+
+1. ```bash
+   npm run build
+   ```
+2. ```bash
+   npm start
+   ```
 
 ## 📂 Packages
 
-| Packages                                      | Description                                 |
-| --------------------------------------------- | ------------------------------------------- |
-| [React](https://reactjs.org/)                 | Library for Single Page Application _(SPA)_ |
-| [Typescript](https://www.typescriptlang.org/) | Types in JavaScript                         |
-| [SASS](https://sass-lang.com/)                | Style SCSS                                  |
-| [uuid](https://www.npmjs.com/package/uuid)    | Unique ID                                   |
-| [Font Awesome](https://fontawesome.com/)      | Icons SVG                                   |
+| Packages                                      | Description         |
+| --------------------------------------------- | ------------------- |
+| [NextJS](https://nextjs.org/)                 | Framework ReactJS   |
+| [Typescript](https://www.typescriptlang.org/) | Types in JavaScript |
+| [SASS](https://sass-lang.com/)                | Style SCSS          |
+| [uuid](https://www.npmjs.com/package/uuid)    | Unique ID           |
+| [Font Awesome](https://fontawesome.com/)      | Icons SVG           |
 
 ## 📷 Screenshots
 
