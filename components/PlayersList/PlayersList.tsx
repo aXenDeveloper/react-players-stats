@@ -1,8 +1,8 @@
-import { FC } from 'react';
-import style from './PlayersList.module.scss';
-import { playerListType } from '../../globalTypes';
-import { PlayersListType } from './PlayersListTypes';
-import PlayersListItem from './PlayersListItem/PlayersListItem';
+import { FC } from "react";
+import style from "./PlayersList.module.scss";
+import { playerListType } from "../../globalTypes";
+import { PlayersListType } from "./PlayersListTypes";
+import PlayersListItem from "./PlayersListItem/PlayersListItem";
 
 const PlayersList: FC<PlayersListType> = ({ playersList, setPlayersList }) => {
   const deletePlayer = (id: string) => {

@@ -1,4 +1,4 @@
-import { playerListType } from '../../../globalTypes';
+import { playerListType } from "../../../globalTypes";
 
 export type PlayersListItemType = {
   data: playerListType;
